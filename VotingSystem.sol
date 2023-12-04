@@ -44,11 +44,6 @@ contract Voting {
         return TheVoters[_TheVoter].name;
     }
 
-     // Get all registred TheVoters
-    function getTheVotersList() private view returns(TheVoter[] memory){
-         return TheVotersList;
-    }
-
     // Check did TheVoter voted
     function CheckIfVoterVoted(address _TheVoter) private view returns (bool) {
         return TheVoters[_TheVoter].hasVoted;
