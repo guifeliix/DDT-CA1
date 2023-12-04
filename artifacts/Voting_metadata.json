@@ -13,93 +13,6 @@
 			{
 				"inputs": [
 					{
-						"internalType": "address",
-						"name": "_TheVoter",
-						"type": "address"
-					}
-				],
-				"name": "CheckIfVoterVoted",
-				"outputs": [
-					{
-						"internalType": "bool",
-						"name": "",
-						"type": "bool"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "",
-						"type": "address"
-					}
-				],
-				"name": "TheVoters",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "isRegistered",
-						"type": "bool"
-					},
-					{
-						"internalType": "bool",
-						"name": "hasVoted",
-						"type": "bool"
-					},
-					{
-						"internalType": "address",
-						"name": "TheVoterAddress",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "uint256",
-						"name": "",
-						"type": "uint256"
-					}
-				],
-				"name": "TheVotersList",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "name",
-						"type": "string"
-					},
-					{
-						"internalType": "bool",
-						"name": "isRegistered",
-						"type": "bool"
-					},
-					{
-						"internalType": "bool",
-						"name": "hasVoted",
-						"type": "bool"
-					},
-					{
-						"internalType": "address",
-						"name": "TheVoterAddress",
-						"type": "address"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
 						"internalType": "string",
 						"name": "_name",
 						"type": "string"
@@ -191,73 +104,6 @@
 							}
 						],
 						"internalType": "struct Voting.TheCand[]",
-						"name": "",
-						"type": "tuple[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTheCands",
-				"outputs": [
-					{
-						"internalType": "string[]",
-						"name": "",
-						"type": "string[]"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [
-					{
-						"internalType": "address",
-						"name": "_TheVoter",
-						"type": "address"
-					}
-				],
-				"name": "getTheVoterDetails",
-				"outputs": [
-					{
-						"internalType": "string",
-						"name": "",
-						"type": "string"
-					}
-				],
-				"stateMutability": "view",
-				"type": "function"
-			},
-			{
-				"inputs": [],
-				"name": "getTheVotersList",
-				"outputs": [
-					{
-						"components": [
-							{
-								"internalType": "string",
-								"name": "name",
-								"type": "string"
-							},
-							{
-								"internalType": "bool",
-								"name": "isRegistered",
-								"type": "bool"
-							},
-							{
-								"internalType": "bool",
-								"name": "hasVoted",
-								"type": "bool"
-							},
-							{
-								"internalType": "address",
-								"name": "TheVoterAddress",
-								"type": "address"
-							}
-						],
-						"internalType": "struct Voting.TheVoter[]",
 						"name": "",
 						"type": "tuple[]"
 					}
@@ -384,11 +230,11 @@
 	},
 	"sources": {
 		"VotingSystem.sol": {
-			"keccak256": "0xb145e24d7c8e1d2bd98af1c2be8469ea95c0b9de484b8081ac58c98b2e5f51eb",
+			"keccak256": "0x31e139e27dea21688458942b92a7b07b437ef91f6b4ca8d003394f91a7c8c698",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://aae260ccd1b7f3953d44a06b451ded08f2f89acebe286f3b60f1edc8f852d306",
-				"dweb:/ipfs/QmWQhfgzTDEwcsghcVyFXf6tz2ZjPKJGokZB4BPJsWPpVf"
+				"bzz-raw://cd5a763ea04a91a78c55329c23f7a7eb726e54c131e52939b65157800ee57981",
+				"dweb:/ipfs/QmSGW9ND6G7LiUvpRoPCDKs8Ndq5JQBRUb1rEcmqx66iXL"
 			]
 		}
 	},

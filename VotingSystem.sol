@@ -6,8 +6,8 @@ contract Voting {
     // Admin address who manages the election
     address public admin; 
     // Voter structure
-    TheVoter[] public TheVotersList;
-    mapping(address => TheVoter) public TheVoters;
+    TheVoter[] private TheVotersList;
+    mapping(address => TheVoter) private TheVoters;
     
     // representatives structure
     struct TheCand {
@@ -39,18 +39,18 @@ contract Voting {
     }
 
     // TheVoter details  
-    function getTheVoterDetails(address _TheVoter) external view returns (string memory) {
+    function getTheVoterDetails(address _TheVoter) private view returns (string memory) {
         require(TheVoters[_TheVoter].isRegistered, "TheVoter is not in memory");
         return TheVoters[_TheVoter].name;
     }
 
      // Get all registred TheVoters
-    function getTheVotersList() external view returns(TheVoter[] memory){
+    function getTheVotersList() private view returns(TheVoter[] memory){
          return TheVotersList;
     }
 
     // Check did TheVoter voted
-    function CheckIfVoterVoted(address _TheVoter) external view returns (bool) {
+    function CheckIfVoterVoted(address _TheVoter) private view returns (bool) {
         return TheVoters[_TheVoter].hasVoted;
     }
     
@@ -63,7 +63,7 @@ contract Voting {
     }
 
     // Get the names of all reps
-    function getTheCands() external view returns (string[] memory) {
+    function getTheCands() private view returns (string[] memory) {
         string[] memory representativesNames = new string[](representativesList.length);
         for (uint256 i = 0; i < representativesList.length; i++) {
             representativesNames[i] = representativesList[i].name;
@@ -71,7 +71,7 @@ contract Voting {
         return representativesNames;
     }
 
-    function getTheCandList() external view returns (TheCand[] memory) {
+    function getTheCandList() public view returns (TheCand[] memory) {
         return representativesList;
     }
     
